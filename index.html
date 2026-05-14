@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio website for a B.Tech Computer Science student." />
+  <title>Portfolio | B.Tech CSE Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar" id="top">
+    <div class="container nav-shell">
+      <a class="brand" href="#home" aria-label="Go to top">
+        <span class="brand-mark">DK</span>
+        <span class="brand-text">My Portfolio</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="primary-navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="Dhruvi Kanadiya_resume.pdf" class="nav-resume" download target="_blank" rel="noopener noreferrer">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+      </div>
+
+      <div class="container hero-grid reveal">
+        <div class="hero-copy">
+          <div class="hero-greeting">
+            <p>Hi, I'm</p>
+            <p><span class="name-highlight">Dhruvi Kanadiya</span></p>
+          </div>
+          <h2>Frontend Developer</h2>
+          <p class="hero-text">I build exceptional digital experiences that are fast, accessible, and visually appealing. Let's create something amazing together.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Hire Me</a>
+            <a class="btn btn-secondary" href="#projects">View Work</a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/Dhruvikanadiya" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.57v-2.1c-3.34.73-4.04-1.4-4.04-1.4a3.18 3.18 0 0 0-1.34-1.76c-1.1-.76.08-.75.08-.75a2.56 2.56 0 0 1 1.87 1.26 2.59 2.59 0 0 0 3.54 1 2.6 2.6 0 0 1 .77-1.63c-2.66-.3-5.46-1.33-5.46-5.93a4.64 4.64 0 0 1 1.23-3.2 4.3 4.3 0 0 1 .12-3.16s1-.32 3.3 1.22a11.37 11.37 0 0 1 6 0c2.3-1.54 3.3-1.22 3.3-1.22.62.98.86 2.1.72 3.2a4.64 4.64 0 0 1 1.23 3.2c0 4.62-2.8 5.63-5.47 5.92a2.93 2.93 0 0 1 .84 2.27v3.37c0 .31.21.68.83.56A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/dhruvikanadiya" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.59c0-1.33-.03-3.05-1.86-3.05-1.87 0-2.16 1.46-2.16 2.96v5.68H9.31V9h3.42v1.56h.05c.48-.9 1.65-1.86 3.39-1.86 3.62 0 4.29 2.38 4.29 5.48v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13Zm1.78 13.02H3.55V9h3.57v11.45ZM22.23 0H1.77A1.75 1.75 0 0 0 0 1.72v20.55A1.75 1.75 0 0 0 1.77 24h20.46A1.76 1.76 0 0 0 24 22.27V1.72A1.76 1.76 0 0 0 22.23 0Z"/></svg>
+            </a>
+            <a href="mailto:dhruvikanadiya@gmail.com" class="social-icon" aria-label="Email"><!-- TODO: Replace with your email address -->
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.2-8 5.1-8-5.1V6l8 5 8-5v2.2Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="profile-photo" aria-label="Profile photo of Dhruvi Kanadiya">
+            <img src="profile.jpeg" alt="Dhruvi Kanadiya profile photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container reveal">
+        <div class="section-heading">
+          <p class="section-kicker">About Me</p>
+          <h2>Driven by design, code, and user experience.</h2>
+        </div>
+
+        <div class="about-copy about-copy-full">
+          <p>
+            Hello! I'm Dhruvi Kanadiya, a third-year Computer Science student at DJ Sanghvi College of Engineering with a CGPA of 9.16 and an aspiring Full-Stack Developer with a strong foundation in Frontend Development and Web Technologies.          </p>
+
+          <p>
+            My journey with development began with a fascination for how the web works — and it quickly turned into hands-on experience building real projects. From crafting responsive frontends to connecting them with backends using Node.js and Express, I've worked on both frontend and full-stack applications that solve real problems.          </p>
+
+          <div class="about-highlights">
+            <article class="about-highlight">
+              <span class="about-highlight-icon">✦</span>
+              <p>I believe in writing code that's not just functional, but clean, readable, and maintainable — because good code is also for the next developer who reads it.</p>
+            </article>
+
+            <article class="about-highlight">
+              <span class="about-highlight-icon">⌘</span>
+              <p>Frontend is where my passion lives — turning designs into smooth, interactive experiences is something I genuinely enjoy doing.</p>
+            </article>
+
+            <article class="about-highlight">
+              <span class="about-highlight-icon">◆</span>
+              <p>I'm excited about landing a full-stack internship where I can contribute to real products, collaborate with a team, and grow beyond what college can teach me.</p>
+            </article>
+          </div>
+
+          <p>
+            I've recently been diving deeper into backend development — exploring REST APIs, databases, and how to build systems that scale. I'm someone who picks up new technologies quickly and doesn't shy away from stepping outside my comfort zone.
+          </p>
+
+          <p>
+            Outside of tech, I enjoy exploring new UI trends, following the developer community online, and constantly finding ways to make my last project better than the first.
+          </p>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section education" id="education">
+      <div class="container reveal">
+        <div class="section-heading education-heading">
+          <p class="section-kicker">Education</p>
+          
+        </div>
+
+        <div class="education-timeline">
+          <div class="education-track" aria-hidden="true"></div>
+
+          <article class="education-entry">
+            <span class="education-marker"></span>
+            <div class="education-card education-card-large">
+              <div class="education-card-head">
+                <div>
+                  <h3>Dwarakadas J. Sanghvi College of Engineering</h3>
+                  <p>Mumbai, India</p>
+                </div>
+                <span class="education-date">Aug 2023 - Apr 2026</span>
+              </div>
+
+              <div class="education-body">
+                <p class="education-program">B.Tech in Computer Science Engineering</p>
+                <div class="education-badge">CGPA: 9.16</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="education-entry education-entry-compact">
+            <span class="education-marker education-marker-secondary"></span>
+            <div class="education-card education-card-small">
+              <div class="education-card-head">
+                <div>
+                  <h3>SVP Junior College of Science & Commerce</h3>
+                  <p>Mumbai, India</p>
+                </div>
+                <span class="education-date">Jun 2022 - Apr 2023</span>
+              </div>
+
+              <div class="education-body education-body-stacked">
+                <div class="education-main">
+                  <p class="education-program">Science</p>
+                  <div class="education-badge">82.50%</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="education-entry education-entry-compact">
+            <span class="education-marker education-marker-secondary"></span>
+            <div class="education-card education-card-small">
+              <div class="education-card-head">
+                <div>
+                  <h3>Shantinagar High School</h3>
+                  <p>Mumbai, India</p>
+                </div>
+                <span class="education-date">Jun 2020 - Apr 2021</span>
+              </div>
+
+              <div class="education-body education-body-stacked">
+                <div class="education-main">
+                  <p class="education-program">Secondary Education</p>
+                  <div class="education-badge">95.60%</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="container reveal">
+        <div class="section-heading">
+          <p class="section-kicker">Skills</p>
+          <h2>Practical tools I use to build and iterate quickly.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Frontend</h3>
+            <div class="skill-list">
+              <div class="skill-item" data-level="95"><span>HTML</span><span>95%</span></div>
+              <div class="skill-item" data-level="90"><span>CSS</span><span>90%</span></div>
+              <div class="skill-item" data-level="88"><span>JavaScript</span><span>88%</span></div>
+              <div class="skill-item" data-level="60"><span>React (basic)</span><span>60%</span></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Backend</h3>
+            <div class="skill-list">
+              <div class="skill-item" data-level="45"><span>Node.js (learning)</span><span>45%</span></div>
+              <div class="skill-item" data-level="40"><span>Express (basic)</span><span>40%</span></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Tools</h3>
+            <div class="tag-cloud">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>VS Code</span>
+              <span>Figma</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container reveal">
+        <div class="section-heading">
+          <p class="section-kicker">Projects</p>
+          <h2>Selected work that shows my frontend and full-stack growth.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-content">
+              <h3>Visual Augmentation in Scholastic Use (V.A.S.U)</h3>
+              <p>An AR-based chemistry learning application that transforms abstract concepts into interactive AR visual experiences. The system enables students to visualize and manipulate molecular structures, simulate chemical reactions, and improve conceptual understanding through immersive learning.</p>
+              <div class="project-tags">
+                <span>Unity(AR foundation)</span>
+                <span>Flutter</span>
+                <span>OpenCV</span>
+                <span>MetaLLaMa</span>
+                <span>FAISS</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="https://drive.google.com/drive/folders/19ZgCcgwbo0NBpfHsESCfnNqj45ms-Ypr?usp=sharing" class="btn btn-small btn-primary" target="_blank">Video</a>
+              <a href="https://github.com/Dhruvikanadiya/V.A.S.U.git" class="btn btn-small btn-secondary" target="_blank">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-content">
+              <h3>DJSEve</h3>
+              <p>DJSEve is a full-stack college event management system with three user roles — Admin, Committee, and Student. Committees submit event requests, admins approve or reject them, and students register for approved events. Built with JWT-secured REST APIs and real-time status notifications.</p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MySQL</span>
+                <span>Express.js</span>
+                
+                <span>JavaScript</span>
+                <span>MongoDB</span>
+                
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="https://drive.google.com/drive/folders/1g-SuaLFR_iV149uxzrUFKXeG33IBUiXW?usp=sharing" class="btn btn-small btn-primary">Video</a>
+              <a href="https://github.com/Dhruvikanadiya/DJSEve_webdev_project.git" class="btn btn-small btn-secondary" target="_blank">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-content">
+              <h3>Product Landing Page</h3>
+              <p>A polished landing page with smooth scrolling, card animations, and a mobile-first layout.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-small btn-primary"><!-- TODO: Replace with live demo link -->Live Demo</a>
+              <a href="#" class="btn btn-small btn-secondary"><!-- TODO: Replace with GitHub repo link -->GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section achievements" id="achievements">
+      <div class="container reveal">
+        <div class="section-heading">
+          <p class="section-kicker">Achievements</p>
+          <h2>Certifications</h2>
+        </div>
+
+        <div class="achievements-grid">
+          <article class="achievement-card achievement-card-cyan">
+            <div class="achievement-top">
+              <span class="achievement-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.5 4.8 6.6v6.1c0 4.7 3.2 8.8 7.2 9.8 4-.9 7.2-5.1 7.2-9.8V6.6L12 2.5Zm0 2.1 5.2 3v4.6c0 3.6-2.2 6.8-5.2 7.9-3-.9-5.2-4.2-5.2-7.9V7.6l5.2-3Zm-1 3.7v6.4l5-3.2-.9-1.4-3.1 2V8.3h-1Z"/>
+                </svg>
+              </span>
+              <span class="achievement-date">Sep 2025 - Oct 2025</span>
+            </div>
+            <h3>Neo4j Fundamentals Certification</h3>
+            <p class="achievement-meta">GraphAcademy Certification</p>
+            <p class="achievement-text">Certified in Cypher and graph data modeling using Neo4j with hands-on experience designing and querying relationship-driven datasets.</p>
+            <div class="project-actions achievement-actions">
+              <a href="https://graphacademy.neo4j.com/c/ed1f7807-893b-4718-a2c5-c1309102d6a7/" class="btn btn-small btn-primary" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </div>
+          </article>
+
+          <article class="achievement-card achievement-card-green">
+            <div class="achievement-top">
+              <span class="achievement-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.5 4.8 6.6v6.1c0 4.7 3.2 8.8 7.2 9.8 4-.9 7.2-5.1 7.2-9.8V6.6L12 2.5Zm0 2.1 5.2 3v4.6c0 3.6-2.2 6.8-5.2 7.9-3-.9-5.2-4.2-5.2-7.9V7.6l5.2-3Zm-1 3.7v6.4l5-3.2-.9-1.4-3.1 2V8.3h-1Z"/>
+                </svg>
+              </span>
+              <span class="achievement-date">Jan 2025 - Feb 2025</span>
+            </div>
+            <h3>Python for Data Science</h3>
+            <p class="achievement-meta">NPTEL (IIT Madras) — 80%</p>
+            <p class="achievement-text">Gained practical knowledge in Python programming and data analysis covering core libraries and analytical workflows.</p>
+            <div class="project-actions achievement-actions">
+              <a href="https://drive.google.com/file/d/1vpLaahwgnXNzyAtGNuK37lcWX-99u3Lj/view?usp=sharing" class="btn btn-small btn-primary" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container reveal">
+        <div class="section-heading center">
+          <p class="section-kicker">Contact</p>
+          <h2>Let’s connect for internships, projects, or collaboration.</h2>
+        </div>
+
+        <div class="contact-layout">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" />
+              <small class="error" data-error-for="name"></small>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" />
+              <small class="error" data-error-for="email"></small>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your opportunity or project idea"></textarea>
+              <small class="error" data-error-for="message"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">Submit Message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact-links">
+            <h3>Find me online</h3>
+            <a href="https://github.com/Dhruvikanadiya" class="social-link" target="_blank" rel="noopener noreferrer"><!-- TODO: Replace with GitHub profile link -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.57v-2.1c-3.34.73-4.04-1.4-4.04-1.4a3.18 3.18 0 0 0-1.34-1.76c-1.1-.76.08-.75.08-.75a2.56 2.56 0 0 1 1.87 1.26 2.59 2.59 0 0 0 3.54 1 2.6 2.6 0 0 1 .77-1.63c-2.66-.3-5.46-1.33-5.46-5.93a4.64 4.64 0 0 1 1.23-3.2 4.3 4.3 0 0 1 .12-3.16s1-.32 3.3 1.22a11.37 11.37 0 0 1 6 0c2.3-1.54 3.3-1.22 3.3-1.22.62.98.86 2.1.72 3.2a4.64 4.64 0 0 1 1.23 3.2c0 4.62-2.8 5.63-5.47 5.92a2.93 2.93 0 0 1 .84 2.27v3.37c0 .31.21.68.83.56A12 12 0 0 0 12 .5Z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/dhruvikanadiya" class="social-link" target="_blank" rel="noopener noreferrer"><!-- TODO: Replace with LinkedIn profile link -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.59c0-1.33-.03-3.05-1.86-3.05-1.87 0-2.16 1.46-2.16 2.96v5.68H9.31V9h3.42v1.56h.05c.48-.9 1.65-1.86 3.39-1.86 3.62 0 4.29 2.38 4.29 5.48v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13Zm1.78 13.02H3.55V9h3.57v11.45ZM22.23 0H1.77A1.75 1.75 0 0 0 0 1.72v20.55A1.75 1.75 0 0 0 1.77 24h20.46A1.76 1.76 0 0 0 24 22.27V1.72A1.76 1.76 0 0 0 22.23 0Z"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:dhruvikanadiya@gmail.com" class="social-link"><!-- TODO: Replace with your email address -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4.2-8 5.1-8-5.1V6l8 5 8-5v2.2Z"/></svg>
+              Email
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> <!-- TODO: Replace with your name -->Dhruvi Kanadiya. All rights reserved.</p>
+      <a href="#home" class="back-to-top">Back to Top</a>
+    </div>
+  </footer>
+</body>
+</html>
